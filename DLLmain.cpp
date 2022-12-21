@@ -1,11 +1,22 @@
 #include <iostream>
+#include <DLLmain.h>
 
-struct Node 
+namespace fucklucas
 {
-    int data;
-    Node* prev;
-    Node* next;
-};
+    class Node 
+    {
+        Node* head;
+
+        public:
+            void Node::printList();
+            void Node::frontInsert(int value);
+
+            int data;
+            Node* prev;
+            Node* next;
+    };
+}
+
 
 //Node* initialize(int value)
 //{
@@ -19,40 +30,37 @@ struct Node
 //    //std::cout << head->prev << std::endl;
 //    return head;
 //}
-struct Node* head;
 
-void initialize(int value)
-{
-    head->data = value;
-    head->prev = nullptr;
-    head->next = nullptr;
-}
+//void initialize(int value)
+//{
+//    head->data = value;
+//    head->prev = nullptr;
+//    head->next = nullptr;
+//}
 
-void frontInsert(int value)
-{
-    Node* temp = new Node;
-    temp->data = value;
-    temp->prev = nullptr;
-    temp->next = head;
-
-    head->prev = temp;
-    head = temp;
-}
-
-void printList()
-{
-    
-}
-
-int main()
-{
+//int main()
+//{
     //Node* head = initialize(100);
     //std::cout << head << std::endl;
-    initialize(6);
-    
+    //head = new Node;
+    //std::cout << head << std::endl;
+    //frontInsert(10);
+    //frontInsert(100);
+    //frontInsert(2);
+    //frontInsert(34);
+    //frontInsert(23);
+    //frontInsert(15);
+    //frontInsert(353);
+    //frontInsert(45);
+    //frontInsert(246);
+    //frontInsert(343);
+    //printList();
 
-    return 0;
-}
+//    return 0;
+//}
 
 // %value = address of value
 // *value = actual value 
+
+// Make struct into class inside namespace
+// New file with new namespace with new class and use the other class
