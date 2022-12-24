@@ -1,26 +1,14 @@
-
-namespace fucklucas
+namespace Nodeclass
 {
-    void Node::frontInsert(int value)
+    class Node 
     {
-        Node* temp = new Node;
-        temp->data = value;
-        temp->prev = nullptr;
-        temp->next = head;
-        head->prev = temp;
-        head = temp;
-    }
+        public:
+            Node* head;
+            int data;
+            Node* prev;
+            Node* next;
 
-    void Node::printList()
-    {
-        Node* temp;
-        temp = head;
-        while(temp->next != nullptr)
-        {
-            std::cout << temp->data << std::endl;
-            temp = temp->next;
-        }
-    }
+            void printList();
+            void frontInsert(int value);
+    };
 }
-
-

@@ -1,9 +1,13 @@
-#include <DllMain.h>
+#include <DLLmain.h>
 
-namespace outside
+int main()
 {
-    fucklucas::Node DLL;
+    Nodeclass::Node DLL;
+    DLL.frontInsert(1);
+    DLL.frontInsert(2);
+    DLL.frontInsert(3);
+    DLL.frontInsert(4);
+    DLL.printList();
 
-    DLL.front
-
+    return 0;
 }
