@@ -1,5 +1,5 @@
 #include <iostream>
-#include <DLLmain.h>
+#include <Node.h>
 
 namespace Nodeclass
 {
